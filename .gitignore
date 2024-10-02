@@ -1,0 +1,8 @@
+# exclude all dotfiles
+.*
+# but never exclude these
+!.gitignore
+!.gitattributes
+!.gitmodules
+!.editorconfig
+!.dir-locals.el
