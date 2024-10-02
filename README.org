@@ -1,0 +1,37 @@
+#+title: CMake Modules
+#+language: american
+
+This repository contains some small CMake Modules that I think are generally
+useful/convenient.
+
+* Usage
+Either copy the file you're interested in into a directory of your choice
+or pull this repository as a git submodule.
+Afterwards you may set ~CMAKE_MODULE_PATH~ accordingly or ~include()~ the
+files using their paths.
+
+* License
+The CMake modules in this repository are licensed using the [[https://opensource.org/license/mit][MIT license]]
+
+#+begin_quote
+Copyright (c) 2024 Marcel Ilg
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#+end_quote
