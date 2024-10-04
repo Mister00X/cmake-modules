@@ -33,7 +33,7 @@
  NOTE: A special variable may be set before invoking the macro, called
  LOG_FIND_PROGRAM_MESSAGE, this variable WILL BE UNSET at the end of the
  macro.
- ]==============================================================================]
+#]==============================================================================]
 
 macro(log_find_program variable progname)
   message(DEBUG "Macro log_find_program invoked with arguments \"${ARGV}\"")
@@ -108,7 +108,7 @@ endmacro()
  NOTE: The special variable "LOG_FIND_PACKAGE_MESSAGE" may be set before invoking
  the macro, its value will be used for the CHECK_START message.
  At the end of the macro THIS VARIABLE WILL BE unset!
- ]==============================================================================]
+#]==============================================================================]
 macro(log_find_package PackageName)
   message(DEBUG "Macro log_find_package invoked with arguments \"${ARGV}\"")
 
