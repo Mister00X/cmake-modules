@@ -1,0 +1,15 @@
+#+title: Changelog
+#+language: american
+
+All notable changes to this project will be documented in this file.
+
+This changelog tries to adhere to [[https://keepachangelog.com/en/1.1.0/][Keep a Changelog]], and this project also tries
+to adhere to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
+
+* UNRELEASED
+
+** Added
+- This [[./CHANGELOG.org][Changelog]]
+- The [[./FindAndLog.cmake][FindAndLog CMake Module]]
+- A [[./README.org][README]] file with usage instructions
+- A [[./LICENSE][License]] file
