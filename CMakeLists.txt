@@ -65,3 +65,5 @@ set(DOC_INSTALL_DIR ${CMAKE_INSTALL_DOCDIR}/)
 # the manpage section!
 set(MAN_INSTALL_DIR ${CMAKE_INSTALL_MANDIR})
 
+# add the cmake directory
+add_subdirectory(cmake)
