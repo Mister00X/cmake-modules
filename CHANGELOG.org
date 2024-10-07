@@ -13,5 +13,6 @@ to adhere to [[https://semver.org/spec/v2.0.0.html][Semantic Versioning]].
 - The [[./FindAndLog.cmake][FindAndLog CMake Module]]
 - A [[./README.org][README]] file with usage instructions
 - A [[./LICENSE][License]] file
+- The capability to install the package using ~cmake --install~
 - A CMake package configuration and package version file to be installed with
   the modules for finding them.

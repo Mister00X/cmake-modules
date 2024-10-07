@@ -33,3 +33,16 @@ write_basic_package_version_file(${CONFIG_PACKAGE_NAME}Version.cmake
   COMPATIBILITY SameMajorVersion
   ARCH_INDEPENDENT)
 
+# list to hold the paths to the package config files
+# NOTE: The full path is still missing
+list(APPEND package_config_files
+     "${CONFIG_PACKAGE_NAME}Config.cmake"
+     "${CONFIG_PACKAGE_NAME}Version.cmake")
+
+# prepend the value of CMAKE_CURRENT_BINARY_DIR to the paths
+list(TRANSFORM package_config_files PREPEND "${CMAKE_CURRENT_BINARY_DIR}/")
+
+
+# install command for the CMake package config files
+install(FILES ${package_config_files}
+        DESTINATION ${CONFIG_PACKAGE_INSTALL_DIR})

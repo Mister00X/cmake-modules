@@ -67,3 +67,24 @@ set(MAN_INSTALL_DIR ${CMAKE_INSTALL_MANDIR})
 
 # add the cmake directory
 add_subdirectory(cmake)
+
+
+# list of all CMake modules defined sofar
+list(APPEND modules_list
+     FindAndLog.cmake)
+
+# list of all files that can be somewhat considered documentation excluding
+# stuff like manual pages
+list(APPEND doc_files
+     CHANGELOG.org
+     LICENSE
+     README.org)
+
+
+# install commands for the cmake modules
+install(FILES ${modules_list}
+        DESTINATION ${MODULES_INSTALL_DIR})
+
+# install "documentation"
+install(FILES ${doc_files}
+        DESTINATION ${DOC_INSTALL_DIR})

@@ -4,6 +4,12 @@
 This repository contains some small CMake Modules that I think are generally
 useful/convenient.
 
+* Installation
+This project may be installed using
+#+begin_example
+cmake --install .
+#+end_example
+
 * Usage
 Either copy the file you're interested in into a directory of your choice
 or pull this repository as a git submodule.
