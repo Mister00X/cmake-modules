@@ -29,3 +29,7 @@ configure_package_config_file(
   PATH_VARS
     MODULES_INSTALL_DIR)
 
+write_basic_package_version_file(${CONFIG_PACKAGE_NAME}Version.cmake
+  COMPATIBILITY SameMajorVersion
+  ARCH_INDEPENDENT)
+
