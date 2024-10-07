@@ -16,6 +16,31 @@ or pull this repository as a git submodule.
 Afterwards you may set ~CMAKE_MODULE_PATH~ accordingly or ~include()~ the
 files using their paths.
 
+** Using the installed modules
+This project provides a CMake package configuration file, which is installed
+in a location searched by cmake by default.
+
+To make use of the installed CMake modules use:
+#+begin_src cmake
+  message(CHECK_START "Searching Mister00Xs CMake modules") # optional
+
+  find_package(Mister00XCMakeModules)
+
+  if(Mister00XCMakeModules_FOUND)
+  message(CHECK_PASS "found") # optional
+  list(APPEND CMAKE_MODULE_PATH ${Mister00XCMakeModules_MODULE_PATH})
+  else()
+  message(CHECK_FAIL "not found") # optional
+
+  # handle the case of the modules not beeing available here
+  endif()
+
+  # assuming the package configuraton file has been found we can now use the
+  # modules
+  include(FindAndLog)
+#+end_src
+
+
 * License
 The CMake modules in this repository are licensed using the [[https://opensource.org/license/mit][MIT license]]
 
